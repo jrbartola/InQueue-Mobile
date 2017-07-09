@@ -72,6 +72,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.songTitleLabel.text = songDataArray[indexPath.row].title
         cell.artistTitleLabel.text = songDataArray[indexPath.row].artist
         cell.albumArtImageView.image = #imageLiteral(resourceName: "drake_album")
+        cell.upvoteLabel.text = String(songDataArray[indexPath.row].upvotes)
+        cell.downvoteLabel.text = String(songDataArray[indexPath.row].downvotes)
         
         return cell
         

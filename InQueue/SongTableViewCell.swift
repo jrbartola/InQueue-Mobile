@@ -18,6 +18,10 @@ class SongTableViewCell: UITableViewCell {
     @IBOutlet weak var upvoteButton: UIButton!
     @IBOutlet weak var downvoteButton: UIButton!
     
+    @IBOutlet weak var upvoteLabel: UILabel!
+    @IBOutlet weak var downvoteLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
