@@ -294,7 +294,7 @@
                             <constraint firstAttribute="trailing" secondItem="e7D-E7-Q2D" secondAttribute="trailing" id="6tS-Kg-mea"/>
                             <constraint firstItem="e7D-E7-Q2D" firstAttribute="leading" secondItem="dC8-pK-ACn" secondAttribute="leading" id="NTO-dN-S2x"/>
                             <constraint firstItem="Bhb-hA-W1Y" firstAttribute="top" secondItem="e7D-E7-Q2D" secondAttribute="bottom" constant="54" id="cZT-QC-Hzf"/>
-                            <constraint firstItem="e7D-E7-Q2D" firstAttribute="top" secondItem="KVs-oX-iPh" secondAttribute="bottom" constant="62" id="qkS-GW-eHn"/>
+                            <constraint firstItem="e7D-E7-Q2D" firstAttribute="top" secondItem="KVs-oX-iPh" secondAttribute="bottom" constant="40" id="qkS-GW-eHn"/>
                         </constraints>
                     </view>
                     <connections>
