@@ -50,6 +50,7 @@ class SessionViewController: UIViewController {
             let textField = alert!.textFields![0]
             print("Text field: \(textField.text!)")
             // Ideally, want to setup a segue to the main up next view controller here
+            self.performSegue(withIdentifier: "joinParty", sender: nil)
         })
         
         let backAction = UIAlertAction(title: "Back", style: .cancel, handler: { [weak alert] (_) in

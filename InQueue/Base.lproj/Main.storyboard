@@ -253,11 +253,44 @@
                     <connections>
                         <outlet property="joinSessionButton" destination="qHK-3w-pZ8" id="RT1-rw-abi"/>
                         <outlet property="startSessionButton" destination="MdQ-rv-MlR" id="uKP-rn-N8l"/>
+                        <segue destination="lt4-ip-DhB" kind="showDetail" identifier="joinParty" id="QVa-2X-c5j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dig-88-Niw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.199999999999999" y="811.84407796101959"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="66K-xe-8Hn">
+            <objects>
+                <viewController id="lt4-ip-DhB" customClass="MainViewController" customModule="InQueue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KVs-oX-iPh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bhb-hA-W1Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dC8-pK-ACn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e7D-E7-Q2D">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e7D-E7-Q2D" secondAttribute="trailing" id="6tS-Kg-mea"/>
+                            <constraint firstItem="e7D-E7-Q2D" firstAttribute="leading" secondItem="dC8-pK-ACn" secondAttribute="leading" id="NTO-dN-S2x"/>
+                            <constraint firstItem="Bhb-hA-W1Y" firstAttribute="top" secondItem="e7D-E7-Q2D" secondAttribute="bottom" constant="54" id="cZT-QC-Hzf"/>
+                            <constraint firstItem="e7D-E7-Q2D" firstAttribute="top" secondItem="KVs-oX-iPh" secondAttribute="bottom" constant="62" id="qkS-GW-eHn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="songTableView" destination="e7D-E7-Q2D" id="fGK-cR-e8P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ll-pu-yEk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="811.84407796101959"/>
         </scene>
     </scenes>
 </document>
