@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88BD2DD11F12A2C400AD8810 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD2DD01F12A2C400AD8810 /* LoginViewController.swift */; };
+		88BD2DD31F12A4F900AD8810 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BD2DD21F12A4F900AD8810 /* RegisterViewController.swift */; };
 		88EBBA931F1147D400B1AB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBBA921F1147D400B1AB3E /* AppDelegate.swift */; };
-		88EBBA951F1147D400B1AB3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EBBA941F1147D400B1AB3E /* ViewController.swift */; };
 		88EBBA981F1147D400B1AB3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EBBA961F1147D400B1AB3E /* Main.storyboard */; };
 		88EBBA9A1F1147D400B1AB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EBBA991F1147D400B1AB3E /* Assets.xcassets */; };
 		88EBBA9D1F1147D400B1AB3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EBBA9B1F1147D400B1AB3E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88BD2DD01F12A2C400AD8810 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		88BD2DD21F12A4F900AD8810 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		88EBBA8F1F1147D400B1AB3E /* InQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EBBA921F1147D400B1AB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88EBBA941F1147D400B1AB3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88EBBA971F1147D400B1AB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88EBBA991F1147D400B1AB3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88EBBA9C1F1147D400B1AB3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,9 +56,10 @@
 		88EBBA911F1147D400B1AB3E /* InQueue */ = {
 			isa = PBXGroup;
 			children = (
+				88BD2DD01F12A2C400AD8810 /* LoginViewController.swift */,
 				88EBBA921F1147D400B1AB3E /* AppDelegate.swift */,
-				88EBBA941F1147D400B1AB3E /* ViewController.swift */,
 				88EBBA961F1147D400B1AB3E /* Main.storyboard */,
+				88BD2DD21F12A4F900AD8810 /* RegisterViewController.swift */,
 				88EBBA991F1147D400B1AB3E /* Assets.xcassets */,
 				88EBBA9B1F1147D400B1AB3E /* LaunchScreen.storyboard */,
 				88EBBA9E1F1147D400B1AB3E /* Info.plist */,
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88EBBA951F1147D400B1AB3E /* ViewController.swift in Sources */,
+				88BD2DD31F12A4F900AD8810 /* RegisterViewController.swift in Sources */,
+				88BD2DD11F12A2C400AD8810 /* LoginViewController.swift in Sources */,
 				88EBBA931F1147D400B1AB3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +266,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = InQueue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.in.InQueue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -299,6 +304,7 @@
 				88EBBAA31F1147D400B1AB3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
