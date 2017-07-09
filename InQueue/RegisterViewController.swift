@@ -10,10 +10,14 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var allDoneButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func allDonePressed(_ sender: Any) {
+    }
 }
