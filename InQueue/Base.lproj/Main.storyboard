@@ -58,6 +58,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zor-nx-MxU"/>
+                                    <segue destination="FTl-dv-HcC" kind="showDetail" id="IXN-kU-9Vs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtb-q2-eCy">
@@ -193,10 +194,10 @@
             </objects>
             <point key="canvasLocation" x="768.79999999999995" y="75.112443778110944"/>
         </scene>
-        <!--View Controller-->
+        <!--Session View Controller-->
         <scene sceneID="UXg-gu-5DY">
             <objects>
-                <viewController id="FTl-dv-HcC" sceneMemberID="viewController">
+                <viewController id="FTl-dv-HcC" customClass="SessionViewController" customModule="InQueue" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hcd-qc-dc2"/>
                         <viewControllerLayoutGuide type="bottom" id="2ZR-EK-sT9"/>
@@ -204,12 +205,59 @@
                     <view key="view" contentMode="scaleToFill" id="3GD-fm-dBv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start the party!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ar-SN-gI4">
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiQ-h4-KaQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the Party!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da1-d2-Fkt">
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHK-3w-pZ8">
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Join Session"/>
+                                <connections>
+                                    <action selector="joinSessionPressed:" destination="FTl-dv-HcC" eventType="touchUpInside" id="6B0-HU-vIK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdQ-rv-MlR">
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Start Session"/>
+                                <connections>
+                                    <action selector="startSessionPressed:" destination="FTl-dv-HcC" eventType="touchUpInside" id="A1H-r4-ze4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wiQ-h4-KaQ" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="8po-AB-eQT"/>
+                            <constraint firstItem="MdQ-rv-MlR" firstAttribute="top" secondItem="8Ar-SN-gI4" secondAttribute="bottom" constant="49" id="AM1-qP-5Yb"/>
+                            <constraint firstItem="Da1-d2-Fkt" firstAttribute="top" secondItem="wiQ-h4-KaQ" secondAttribute="bottom" constant="41" id="Ilo-4D-OlM"/>
+                            <constraint firstItem="qHK-3w-pZ8" firstAttribute="top" secondItem="Da1-d2-Fkt" secondAttribute="bottom" constant="64" id="UW8-DA-eQ7"/>
+                            <constraint firstItem="MdQ-rv-MlR" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="Wng-JO-lHL"/>
+                            <constraint firstItem="qHK-3w-pZ8" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="awj-0C-chW"/>
+                            <constraint firstItem="8Ar-SN-gI4" firstAttribute="top" secondItem="hcd-qc-dc2" secondAttribute="bottom" constant="100" id="cIJ-yu-h4u"/>
+                            <constraint firstItem="8Ar-SN-gI4" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="iCU-tz-vIj"/>
+                            <constraint firstItem="wiQ-h4-KaQ" firstAttribute="top" secondItem="MdQ-rv-MlR" secondAttribute="bottom" constant="37" id="rPx-Py-QdE"/>
+                            <constraint firstItem="Da1-d2-Fkt" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="vx0-qR-Jjs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="joinSessionButton" destination="qHK-3w-pZ8" id="RT1-rw-abi"/>
+                        <outlet property="startSessionButton" destination="MdQ-rv-MlR" id="uKP-rn-N8l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dig-88-Niw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="736"/>
+            <point key="canvasLocation" x="31.199999999999999" y="811.84407796101959"/>
         </scene>
     </scenes>
 </document>
