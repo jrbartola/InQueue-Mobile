@@ -13,6 +13,7 @@ struct SongCell {
     var title: String
     var upvotes: Int
     var downvotes: Int
+    var artwork: UIImage
 }
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -28,9 +29,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         songTableView.delegate = self
         songTableView.dataSource = self
         
-        songDataArray = [SongCell(artist: "Drake", title: "Headlines", upvotes: 34, downvotes: 12),
-                         SongCell(artist: "Logic", title: "Swaggy", upvotes: 23, downvotes: 18),
-                         SongCell(artist: "Barney", title: "Test Song", upvotes: 12, downvotes: 993)]
+        songDataArray = [SongCell(artist: "Drake", title: "Headlines", upvotes: 34, downvotes: 12, artwork: #imageLiteral(resourceName: "drake_album")),
+                         SongCell(artist: "Jay-Z", title: "Off That (feat. Drake)", upvotes: 23, downvotes: 18, artwork: #imageLiteral(resourceName: "jay_z_blueprint3")),
+                         SongCell(artist: "Baby", title: "Justin Bieber", upvotes: 12, downvotes: 993, artwork: #imageLiteral(resourceName: "baby_bieber"))]
     }
     
     func setNavigationBar() {
@@ -71,7 +72,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.songTitleLabel.text = songDataArray[indexPath.row].title
         cell.artistTitleLabel.text = songDataArray[indexPath.row].artist
-        cell.albumArtImageView.image = #imageLiteral(resourceName: "drake_album")
+        cell.albumArtImageView.image = songDataArray[indexPath.row].artwork
         cell.upvoteLabel.text = String(songDataArray[indexPath.row].upvotes)
         cell.downvoteLabel.text = String(songDataArray[indexPath.row].downvotes)
         
