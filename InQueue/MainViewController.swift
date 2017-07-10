@@ -25,6 +25,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNavigationBar()
+        self.view.backgroundColor = UIColor(red:0.02, green:0.07, blue:0.22, alpha:1.0)
+
         
         songTableView.delegate = self
         songTableView.dataSource = self

@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red:0.02, green:0.07, blue:0.22, alpha:1.0)
+
     }
     
     @IBAction func loginButtonPressed(_ sender: AnyObject) {
@@ -26,6 +28,7 @@ class LoginViewController: UIViewController {
         
         print(email, password)
     }
+    
     
 
 }
