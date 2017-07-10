@@ -14,14 +14,25 @@ class SessionViewController: UIViewController {
     @IBOutlet weak var joinSessionButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
 
+    @IBOutlet weak var startThePartyLabel: UILabel!
+    @IBOutlet weak var joinThePartyLabel: UILabel!
+    @IBOutlet weak var orLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red:0.02, green:0.07, blue:0.22, alpha:1.0)
-
-
-
+        setupTextColors()
         // Do any additional setup after loading the view.
+    }
+    
+    func setupTextColors() {
+        self.view.backgroundColor = COLOR_SCHEME[0]
+        startSessionButton.setTitleColor(COLOR_SCHEME[3], for: .normal)
+        joinSessionButton.setTitleColor(COLOR_SCHEME[3], for: .normal)
+        backButton.setTitleColor(COLOR_SCHEME[2], for: .normal)
+        
+        startThePartyLabel.textColor = COLOR_SCHEME[2]
+        joinThePartyLabel.textColor = COLOR_SCHEME[2]
+        orLabel.textColor = COLOR_SCHEME[3]
     }
     
     @IBAction func startSessionPressed(_ sender: AnyObject) {

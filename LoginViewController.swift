@@ -16,10 +16,24 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
+    @IBOutlet weak var inqueueLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red:0.02, green:0.07, blue:0.22, alpha:1.0)
+        setupTextColors()
 
+    }
+    
+    func setupTextColors() {
+        self.view.backgroundColor = COLOR_SCHEME[0]
+        inqueueLabel.textColor = COLOR_SCHEME[2]
+        emailLabel.textColor = COLOR_SCHEME[3]
+        passwordLabel.textColor = COLOR_SCHEME[3]
+        loginButton.setTitleColor(COLOR_SCHEME[2], for: .normal)
+        registerButton.setTitleColor(COLOR_SCHEME[2], for: .normal)
     }
     
     @IBAction func loginButtonPressed(_ sender: AnyObject) {
