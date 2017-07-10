@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,17 +18,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="InQueue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uX-5f-aPc">
-                                <rect key="frame" x="355.5" y="47" width="123" height="40.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
+                                <rect key="frame" x="114.5" y="47" width="146.5" height="41.5"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="34"/>
                                 <color key="textColor" red="0.34901960784313724" green="0.74117647058823533" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0KU-Wf-ycw">
-                                <rect key="frame" x="315" y="388" width="204" height="30"/>
+                                <rect key="frame" x="85.5" y="389" width="204" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="204" id="Agw-zt-v2z"/>
                                     <constraint firstAttribute="height" constant="30" id="i1t-6k-Xdd"/>
@@ -38,7 +38,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h1g-aH-8QC">
-                                <rect key="frame" x="315" y="318" width="204" height="30"/>
+                                <rect key="frame" x="85.5" y="319" width="204" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="204" id="8NR-C7-JsH"/>
                                     <constraint firstAttribute="height" constant="30" id="lGz-0d-uuK"/>
@@ -48,22 +48,23 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp2-VS-MW7">
-                                <rect key="frame" x="313" y="288.5" width="45" height="20.5"/>
+                                <rect key="frame" x="84" y="288" width="51" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="HPp-I8-2wh"/>
+                                    <constraint firstAttribute="width" constant="51" id="HPp-I8-2wh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <color key="textColor" red="0.070588235289999995" green="0.39607843139999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsy-DM-92d">
-                                <rect key="frame" x="315" y="358.5" width="74" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="82" y="359" width="81" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <color key="textColor" red="0.070588235289999995" green="0.39607843139999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYZ-1e-By6">
-                                <rect key="frame" x="398" y="484" width="38" height="30"/>
+                                <rect key="frame" x="161" y="485" width="53" height="33"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.34901960784313724" green="0.74117647058823533" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -78,7 +79,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtb-q2-eCy">
-                                <rect key="frame" x="388.5" y="522" width="57" height="30"/>
+                                <rect key="frame" x="147.5" y="526" width="80" height="33"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.34901960780000002" green="0.74117647060000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.63921568630000003" green="0.87058823529999996" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,12 +95,12 @@
                             <constraint firstItem="h1g-aH-8QC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3vm-eD-hyc"/>
                             <constraint firstItem="0KU-Wf-ycw" firstAttribute="top" secondItem="h1g-aH-8QC" secondAttribute="bottom" constant="40" id="7Ts-Th-su4"/>
                             <constraint firstItem="xsy-DM-92d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-65" id="CpF-FI-HDH"/>
-                            <constraint firstItem="h1g-aH-8QC" firstAttribute="top" secondItem="hp2-VS-MW7" secondAttribute="bottom" constant="9" id="NRv-lt-Hh2"/>
+                            <constraint firstItem="h1g-aH-8QC" firstAttribute="top" secondItem="hp2-VS-MW7" secondAttribute="bottom" constant="10" id="NRv-lt-Hh2"/>
                             <constraint firstItem="Mtb-q2-eCy" firstAttribute="top" secondItem="cYZ-1e-By6" secondAttribute="bottom" constant="8" id="QlU-we-zfS"/>
                             <constraint firstItem="0uX-5f-aPc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XRs-lb-v3O"/>
                             <constraint firstItem="cYZ-1e-By6" firstAttribute="top" secondItem="0KU-Wf-ycw" secondAttribute="bottom" constant="66" id="bYz-IS-X4R"/>
                             <constraint firstItem="Mtb-q2-eCy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eEd-Qg-h8k"/>
-                            <constraint firstItem="hp2-VS-MW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-81.5" id="fTw-lx-K6j"/>
+                            <constraint firstItem="hp2-VS-MW7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-78" id="fTw-lx-K6j"/>
                             <constraint firstItem="0uX-5f-aPc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="ktM-rB-J5e"/>
                             <constraint firstItem="h1g-aH-8QC" firstAttribute="top" secondItem="0uX-5f-aPc" secondAttribute="bottom" constant="230.5" id="u5c-F6-tOS"/>
                             <constraint firstItem="cYZ-1e-By6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wk2-JR-C8Y"/>
@@ -115,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.884057971014496" y="76.630434782608702"/>
+            <point key="canvasLocation" x="31.199999999999999" y="76.011994002998506"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="fzv-7L-eEB">
@@ -126,20 +128,11 @@
                         <viewControllerLayoutGuide type="bottom" id="SAG-uU-htH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dYk-BU-DpP">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzJ-XF-Rec">
-                                <rect key="frame" x="348.5" y="47" width="137" height="40.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="137" id="uOY-2Z-Rew"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="34"/>
-                                <color key="textColor" red="0.34901960780000002" green="0.74117647060000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oA1-vZ-VzU">
-                                <rect key="frame" x="315" y="351.5" width="204" height="30"/>
+                                <rect key="frame" x="85.5" y="352.5" width="204" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ETD-vV-7nA"/>
                                     <constraint firstAttribute="width" constant="204" id="OBa-AE-8zR"/>
@@ -149,7 +142,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fb2-Rb-uZk">
-                                <rect key="frame" x="315" y="281.5" width="204" height="30"/>
+                                <rect key="frame" x="85.5" y="282.5" width="204" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="YVv-OJ-1Ey"/>
                                     <constraint firstAttribute="width" constant="204" id="g2f-WP-uil"/>
@@ -159,28 +152,28 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qx9-fN-RH4">
-                                <rect key="frame" x="313.5" y="251.5" width="45" height="20.5"/>
+                                <rect key="frame" x="84" y="252" width="51" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="PVA-eI-r9O"/>
+                                    <constraint firstAttribute="width" constant="51" id="PVA-eI-r9O"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <color key="textColor" red="0.070588235289999995" green="0.39607843139999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPa-Sw-VsK">
-                                <rect key="frame" x="315" y="321.5" width="74" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="82" y="322" width="81" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <color key="textColor" red="0.070588235289999995" green="0.39607843139999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="confirm password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l2-Gl-AoA">
-                                <rect key="frame" x="313.5" y="390" width="137" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="77" y="390.5" width="151" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <color key="textColor" red="0.070588235289999995" green="0.39607843139999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aVI-jT-SGf">
-                                <rect key="frame" x="315" y="418.5" width="204" height="30"/>
+                                <rect key="frame" x="85.5" y="419.5" width="204" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="204" id="3XA-Yd-fnk"/>
                                     <constraint firstAttribute="height" constant="30" id="Ws4-PI-BP8"/>
@@ -190,7 +183,8 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMq-a9-P5h">
-                                <rect key="frame" x="386" y="527" width="62" height="30"/>
+                                <rect key="frame" x="144" y="528" width="87" height="33"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                 <state key="normal" title="All Done!">
                                     <color key="titleColor" red="0.34901960780000002" green="0.74117647060000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.63921568630000003" green="0.87058823529999996" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -201,7 +195,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-3D-Pxu">
-                                <rect key="frame" x="400" y="560" width="34" height="30"/>
+                                <rect key="frame" x="164.5" y="564" width="46" height="33"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.34901960780000002" green="0.74117647060000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.63921568630000003" green="0.87058823529999996" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,13 +205,22 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="X4H-bd-mSv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzJ-XF-Rec">
+                                <rect key="frame" x="119" y="47" width="147" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="uOY-2Z-Rew"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="34"/>
+                                <color key="textColor" red="0.34901960780000002" green="0.74117647060000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aVI-jT-SGf" firstAttribute="top" secondItem="2l2-Gl-AoA" secondAttribute="bottom" constant="8" id="8rh-Sb-kq3"/>
                             <constraint firstItem="Fb2-Rb-uZk" firstAttribute="centerX" secondItem="dYk-BU-DpP" secondAttribute="centerX" id="DRN-SP-1Kj"/>
                             <constraint firstItem="aVI-jT-SGf" firstAttribute="top" secondItem="oA1-vZ-VzU" secondAttribute="bottom" constant="37" id="GjE-mu-P9H"/>
-                            <constraint firstItem="qx9-fN-RH4" firstAttribute="centerX" secondItem="dYk-BU-DpP" secondAttribute="centerX" constant="-81" id="Msq-t7-chY"/>
+                            <constraint firstItem="qx9-fN-RH4" firstAttribute="centerX" secondItem="dYk-BU-DpP" secondAttribute="centerX" constant="-78" id="Msq-t7-chY"/>
                             <constraint firstItem="Fb2-Rb-uZk" firstAttribute="top" secondItem="qx9-fN-RH4" secondAttribute="bottom" constant="9.5" id="RfG-l3-3rv"/>
                             <constraint firstItem="w3A-3D-Pxu" firstAttribute="centerX" secondItem="dYk-BU-DpP" secondAttribute="centerX" id="UP6-EN-jCZ"/>
                             <constraint firstItem="MMq-a9-P5h" firstAttribute="centerX" secondItem="dYk-BU-DpP" secondAttribute="centerX" id="bcP-b2-3Gp"/>
@@ -228,7 +232,7 @@
                             <constraint firstItem="oA1-vZ-VzU" firstAttribute="top" secondItem="Fb2-Rb-uZk" secondAttribute="bottom" constant="40" id="iA1-6I-izS"/>
                             <constraint firstItem="Fb2-Rb-uZk" firstAttribute="top" secondItem="qzJ-XF-Rec" secondAttribute="bottom" constant="194" id="jla-TP-4aM"/>
                             <constraint firstItem="MPa-Sw-VsK" firstAttribute="centerX" secondItem="dYk-BU-DpP" secondAttribute="centerX" constant="-65" id="lZE-JS-nNO"/>
-                            <constraint firstItem="qzJ-XF-Rec" firstAttribute="centerX" secondItem="dYk-BU-DpP" secondAttribute="centerX" id="sJo-QX-QEb"/>
+                            <constraint firstItem="qzJ-XF-Rec" firstAttribute="centerX" secondItem="dYk-BU-DpP" secondAttribute="centerX" constant="5" id="sJo-QX-QEb"/>
                             <constraint firstItem="oA1-vZ-VzU" firstAttribute="top" secondItem="MPa-Sw-VsK" secondAttribute="bottom" constant="9.5" id="v3e-0Y-TFr"/>
                             <constraint firstItem="w3A-3D-Pxu" firstAttribute="top" secondItem="MMq-a9-P5h" secondAttribute="bottom" constant="3" id="x7a-nY-NYa"/>
                         </constraints>
@@ -251,40 +255,40 @@
                         <viewControllerLayoutGuide type="bottom" id="2ZR-EK-sT9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3GD-fm-dBv">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start the party!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ar-SN-gI4">
-                                <rect key="frame" x="321.5" y="120" width="191" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Start the party!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ar-SN-gI4">
+                                <rect key="frame" x="80" y="120" width="214" height="35"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="27"/>
                                 <color key="textColor" red="0.34901960780000002" green="0.74117647060000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiQ-h4-KaQ">
-                                <rect key="frame" x="409" y="276" width="16" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="178.5" y="266" width="18" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
                                 <color key="textColor" red="0.070588235294117646" green="0.396078431372549" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join the Party!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Da1-d2-Fkt">
-                                <rect key="frame" x="325.5" y="337.5" width="183" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <rect key="frame" x="90" y="328" width="196.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="27"/>
                                 <color key="textColor" red="0.34901960780000002" green="0.74117647060000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHK-3w-pZ8">
-                                <rect key="frame" x="363.5" y="436.5" width="107" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHK-3w-pZ8">
+                                <rect key="frame" x="124" y="401" width="127" height="33"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                 <state key="normal" title="Join Session">
-                                    <color key="titleColor" red="0.34901960780000002" green="0.74117647060000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.070588235289999995" green="0.39607843139999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="joinSessionPressed:" destination="FTl-dv-HcC" eventType="touchUpInside" id="6B0-HU-vIK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdQ-rv-MlR">
-                                <rect key="frame" x="360.5" y="204" width="113" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <rect key="frame" x="124" y="196" width="127" height="33"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                 <state key="normal" title="Start Session">
                                     <color key="titleColor" red="0.070588235289999995" green="0.39607843139999999" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.63921568630000003" green="0.87058823529999996" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -294,10 +298,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ct9-cb-Z2Z">
-                                <rect key="frame" x="400" y="539" width="34" height="30"/>
+                                <rect key="frame" x="164.5" y="479" width="46" height="33"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="17"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="0.34901960780000002" green="0.74117647060000003" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.63921568630000003" green="0.87058823529999996" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="3RS-xO-gcC"/>
@@ -307,15 +311,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wiQ-h4-KaQ" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="8po-AB-eQT"/>
-                            <constraint firstItem="MdQ-rv-MlR" firstAttribute="top" secondItem="8Ar-SN-gI4" secondAttribute="bottom" constant="49" id="AM1-qP-5Yb"/>
+                            <constraint firstItem="MdQ-rv-MlR" firstAttribute="top" secondItem="8Ar-SN-gI4" secondAttribute="bottom" constant="43" id="AM1-qP-5Yb"/>
                             <constraint firstItem="Da1-d2-Fkt" firstAttribute="top" secondItem="wiQ-h4-KaQ" secondAttribute="bottom" constant="41" id="Ilo-4D-OlM"/>
                             <constraint firstItem="ct9-cb-Z2Z" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="Ro0-lK-6em"/>
-                            <constraint firstItem="qHK-3w-pZ8" firstAttribute="top" secondItem="Da1-d2-Fkt" secondAttribute="bottom" constant="64" id="UW8-DA-eQ7"/>
+                            <constraint firstItem="qHK-3w-pZ8" firstAttribute="top" secondItem="Da1-d2-Fkt" secondAttribute="bottom" constant="40" id="UW8-DA-eQ7"/>
                             <constraint firstItem="MdQ-rv-MlR" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="Wng-JO-lHL"/>
                             <constraint firstItem="qHK-3w-pZ8" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="awj-0C-chW"/>
                             <constraint firstItem="8Ar-SN-gI4" firstAttribute="top" secondItem="hcd-qc-dc2" secondAttribute="bottom" constant="100" id="cIJ-yu-h4u"/>
                             <constraint firstItem="8Ar-SN-gI4" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="iCU-tz-vIj"/>
-                            <constraint firstItem="ct9-cb-Z2Z" firstAttribute="top" secondItem="qHK-3w-pZ8" secondAttribute="bottom" constant="67.5" id="ovl-Td-UVd"/>
+                            <constraint firstItem="ct9-cb-Z2Z" firstAttribute="top" secondItem="qHK-3w-pZ8" secondAttribute="bottom" constant="45" id="ovl-Td-UVd"/>
                             <constraint firstItem="wiQ-h4-KaQ" firstAttribute="top" secondItem="MdQ-rv-MlR" secondAttribute="bottom" constant="37" id="rPx-Py-QdE"/>
                             <constraint firstItem="Da1-d2-Fkt" firstAttribute="centerX" secondItem="3GD-fm-dBv" secondAttribute="centerX" id="vx0-qR-Jjs"/>
                         </constraints>
@@ -340,11 +344,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Bhb-hA-W1Y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dC8-pK-ACn">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e7D-E7-Q2D">
-                                <rect key="frame" x="0.0" y="60" width="834" height="998"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="553"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
